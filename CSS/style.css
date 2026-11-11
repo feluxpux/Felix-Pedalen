@@ -33,3 +33,25 @@
     ); /* clamp(minst, ideal, störst): växer med fönstret */
     --max-width: 70rem; /* innehållets maxbredd */
 }
+
+/* Grundstil */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* hoppar till ankarlänk, men med bestämt avstånd, uppåt eller nedåt */
+html {
+    scroll-padding-top: 5rem;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--color-ink);
+    background-color: var(--color-bg);
+}
